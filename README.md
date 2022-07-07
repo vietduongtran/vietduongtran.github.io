@@ -4,5 +4,5 @@
 - Learn Git, Github
 - Learn Markdown
     - File có đuôi .md là file Markdown
-    - Học cách viết mardown ở link [Markdown] (https://markdownguide.org/basic-syntax/)
+    - Học cách viết mardown ở link [Markdown](https://markdownguide.org/basic-syntax/))
 - Learn HTML Layout
