@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- thêm favicon-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS</title>
+
+    <!--Internal CSS viết trong phần HEAD-->
+    <style>
+
+        p { text-indent: 30px;
+        }
+
+          #rect1 { width: 200px;
+        height: 200px;
+        background-color: aquamarine;
+    
+      }
+
+      #rect2 {
+        background-color: rgb(116, 160, 116);
+        width: 300px;
+        height: 200px;
+      }
+
+      p#hello {
+        width: 300px;
+        background-color: rgb(22, 140, 163);
+      }
+
+      .textcolor {
+        color: purple
+      }
+
+       .textfont {font-size: 50px;
+        }
+
+    </style>
+
+<!-- Nhúng file CSS trong head-->
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+  <body>
+    
+    <!-- inline CSS-->
+    <!-- font weight là độ dầy (bold-er, light-er); font-family; padding-khoảng cách giữa nội dung và viền (cả 4 phía; có thể sửa theo từng phía); margin-top là ()-->
+    <p
+      style="
+        color: yellow;
+        font-size: 30px;
+        font-weight: 600;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: justify;
+        background-color: darkcyan;
+        text-decoration: underline;
+        text-transform: capitalize;
+        padding: 60px;
+        padding-top: 50px;
+        padding-bottom: 10px;
+        margin-bottom: 100px;
+    
+      "
+    >
+      VCS nghĩa là hệ thống giúp lập trình viên có thể lưu trữ nhiều phiên bản
+      khác nhau của một mã nguồn được nhân bản (clone) từ một kho chứa mã nguồn
+      (repository), mỗi thay đổi vào mã nguồn trên local sẽ có thể ủy thác
+      (commit) rồi đưa lên server nơi đặt kho chứa chính.
+    </p>
+
+<!-- div - means division -->
+<!-- id - được 1 , class - có thể nhiều nhóm trong 1 class-->
+    <div id="rect1"></div>
+
+    <div id="rect2">
+        <a href="#">Google</a>
+        <p id="hello">Hello</p>
+    </div>
+
+    <h2 class="textcolor textfont">Tiêu đề 1</h2>
+
+    <h2 class="textcolor">Tiêu đề 2</h2>
+
+<!-- Phần tử được CSS trong file style.css-->
+
+<h1 id="topic">Subject: Cascading Style Sheet</h1>
+<p class="css">CSS là gì?</p>
+<p>
+<a class="link" href="https://facebook.com/">CSS Tutorial</a> </p>
+<img class="photo"
+src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/
+CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png" alt="css-la-gi" />
+
+  </body>
+</html>

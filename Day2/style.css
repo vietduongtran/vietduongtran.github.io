@@ -1,0 +1,36 @@
+/* External CSS */
+
+* {
+    box-sizing: border-box ;
+    margin: 0px ;
+    padding: 0px;
+}
+    #topic {
+        color: brown;
+        font-size: 48px;
+        text-transform: capitalize;
+        margin-top: 60px;
+        text-align: center;
+        background-color: aquamarine;
+
+    }
+    
+    .css:hover {
+        color: red;
+        opacity: 0.5;
+    }
+
+    .link {
+        display: block;
+        margin: 300pxs;
+    }
+
+    .photo {
+        width: 200px;
+        height: 300px;
+        margin: 50px;
+        object-fit: fill;
+        background-color: yellow;
+        border-style: ridge;
+        border-color: black;
+    }
