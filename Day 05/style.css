@@ -2,6 +2,7 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+   
 }
  
 #container {
@@ -75,8 +76,8 @@
 }
  
 .sub-menu a:hover {
-    color: grey;
-    opacity: 50%;
+    color: white;
+    background-color: #c4c4c4;
 }
  
 li {
@@ -99,7 +100,7 @@ li {
     border: none;
     border-radius: 5px;
     width: 200px;
-    text-align: center;
+ 
  
 }
  
@@ -108,6 +109,7 @@ li {
     color: grey;
     background-color: white;
     box-shadow: 0 4px 4px 0 rgb(0 0 0 / 25%);
+    text-align: center;
 }
  
 .child-menu a {
@@ -124,69 +126,176 @@ li {
    
 }
  
-.child-menu li:hover .sub-child-menu {
+.child-menu li:hover .child-menu a {
     color:white;
- 
+    background-color: #464646;
 }
  
 #dropdown1 {
     left: -100px }
  
-#dropdown2 {
-    left: 50px }
- 
- 
-    /* sub child menu */
- 
-.sub-child-menu {
-        position: absolute;
-        padding-top: 30px;  
-        display: none;
-        background-color: none;
-        border: none;
-        width: 200px;
-        text-align: center;
-        left: 190px;
-        top: 0;
+#dropdown11 {
    
-    }    
+}
  
-    .child-menu li:hover .sub-child-menu {
-        display: block;
-        display: flex;
-        flex-flow: column;
-       
-    }
- 
-    .sub-child-menu a {
-     
-        color: #464646;
-        background-color: white;
-        text-align: center;
-        text-transform: none;
-    }
- 
-    .sub-child-menu li {
-        padding: 10px;
-        color: grey;
-        background-color: white;
-        box-shadow: 0 4px 4px 0 rgb(0 0 0 / 25%);
-    }
+#dropdown2 {
+    left: 50px; }
  
  
  
-    /* part2 */
+/* block2 */
+ 
+#block2 {
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+}
+ 
+.body1 {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1320px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+ 
+.layout {
+    margin-top: 20px;
+}
+ 
+.row {
+    margin-left: 0;
+    margin-right: 0%;
+    display: flex;
+    flex: wrap;
+}
+ 
+.left1 {
+    display: flex;
+    flex: 0 0 66.6666%;
+    max-width: 66.6666%;
+    background-color: white;
+}
+ 
+.right1 {
+    display: flex;
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+   
+}
+ 
+.list-posts {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    margin: 0px 0px 20px 0px;
+}
+ 
+.post {
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px rgb(0 0 0 / 25%);
+    height: 21.5%;
+}
+ 
+.post-thumbnail {
+    float: left;
+    height: 100%;
+    width: 110px;
+}
+ 
+.post-thumbnail img {
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+ 
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+ 
+a {
+    text-decoration: none;
+    background-color: transparent;
+}
+ 
+a:link {
+    text-decoration: none;
+}
+ 
+.post-info {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    height: 100%;
+    padding: 5px;
+    width: calc(100% - 110px);
+    justify-content: space-between;
+}
+ 
+.post-title {
+    color: #464646;
+    font-size: 1rem;
+    text-align: left;
+}
+ 
+.post-author {
+    color: #757575;
+    font-size: .8rem;
+}
+ 
+/* techmaster */
+ 
+.body2 {
+    background-color: #F5faff;
+    padding-bottom: 150px;
+    margin-top: 20px;
+}
+ 
+.text-center {
+    text-align: center;
+}
+.pb-3, .py-3 {
+    padding-bottom: 1rem;
+}
+.pt-3, .py-3 {
+    padding-top: 1rem;
+}
+ 
+.left2 {
+    position: relative;
+    width: 50%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+ 
+.intro-content {
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+}
+ 
+.text-lg-left {
+    text-align: left;
+}
+ 
+.mt-3 {
+    margin-top: 1rem;
+}
+ 
+.right2 {
+    display: flex;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
  
  
-    #part2 {
-        box-sizing: border-box;
-        display: block;
-        padding-left: 15px;
-        padding-right: 15px;
-        margin-left: 336px;
-        margin-right: 336px;
-        background-color: blue;
-        margin-top: 10px;
-        }
- 
-   /* ?? */
+

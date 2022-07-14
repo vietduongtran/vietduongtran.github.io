@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+
+    .rectangle {
+        width: 100px;
+        height: 100px;
+        background-color: green;
+        /* viết như dưới hoặc viết tắt là transition: all 2s 200ms linear; */
+        transition-property: width height background-color;
+        transition-duration: 2s;
+        transition-delay: 200ms;
+        transition-timing-function: ease-in-out;
+    }
+
+    .rectangle:hover {
+        background-color: red;
+        width: 200px;
+        height: 200px;
+        transform: rotate(45deg);
+
+    }
+
+    .circle {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+
+        transition: all 2s 100ms ease-in;
+       
+    }
+
+.circle:hover {
+    width: 200px;
+    height: 200px;
+    border-radius: 60%;
+}
+
+.rect {
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+    background-color: yellow;
+    animation-name: change-many-color;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+
+@keyframes change-color {
+    from { 
+        background-color: yellow;
+    }
+    to {
+        background-color: rebeccapurple;
+    }
+}
+
+@keyframes change-many-color {
+    10% {
+        background-color: green;
+    }
+
+    30% {
+        background-color: teal;
+    }
+
+    50% {
+        background-color: blue;
+    }
+
+    70% {
+        background-color: red;
+    }
+}
+
+
+
+</style>
+
+<body>
+    <div class="rectangle">
+    </div>
+
+    <div class="circle"></div>
+
+    <div class="rect"></div>
+
+    <div class="item">
+       
+        <div class="photo"><img src="https://duhocvietglobal.com/wp-content/uploads/2018/12/dat-nuoc-va-con-nguoi-anh-quoc.jpg" alt="anh">
+        </div>
+  <div class="name"> <p> Hoa cuc dai</p></div> 
+   
+    </div>
+</body>
+</html>
