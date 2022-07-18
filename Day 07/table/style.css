@@ -1,0 +1,182 @@
+html{
+  font-size: 24px;
+}
+form{
+  text-align: center;
+}
+
+ul{
+  display:flex;
+  flex-direction: row;
+  padding-inline-start: 0;
+  justify-content: center;
+
+}
+
+li{
+  text-align: center;
+  color: #797979;
+  display: block;
+  box-sizing: border-box;
+  width:40px;
+  height: auto;
+  border-radius: 50%;
+  border: 2px solid #797979;
+  margin: 0 5px 0 0 ;
+  line-height: 1.4rem;
+  padding:auto;
+  font-weight: 700;
+}
+
+table{
+  border-collapse: collapse;
+  width:50%;
+  
+  table-layout: auto;
+
+}
+
+
+tr{
+  table-layout: fixed;
+  border-collapse: collapse;
+  display:table-row;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+td{
+  text-align: center;
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  padding: 10px  0;
+  display:table-cell;
+  height: 100%;
+  line-height: 26px;
+}
+
+td:nth-child(2){
+  width:90%;
+}
+
+td:first-child{
+  width: 10%;
+}
+
+
+.first-td{
+  width: 100%;
+
+}
+
+#share, #save, #zoom-in{
+  width: 100%;
+  height: 50px;
+  padding: 0;
+}
+
+button{
+  height: 50px;
+  padding:0;
+  box-sizing: border-box;
+  border-radius: 6px;
+  border: 0.5px solid #ccc;
+  border-right: none;
+  border-top:none;
+}
+
+input{
+  border-radius: 6px;
+  border: 0.5px solid #ccc;
+  
+  border-left: none;
+}
+
+.share, .save, .zoom-in{
+  display: inline-flex;
+  padding-left: 6px;
+  padding-right: 5px;
+  width: 31%;
+  margin: auto;
+
+}
+
+
+span{
+  margin:auto;
+  
+}
+
+.g3 td:last-child > span, tr:nth-of-type(6) td:last-child > span, tr:nth-of-type(7) td:last-child > span{
+  width: 32%;
+  display: inline-block;
+  height: 100%;
+  line-height: 34px;
+}
+
+tr:nth-of-type(3) td:last-child > span {
+  width: 45%;
+  display: inline-block;
+  height: 100%;
+  line-height: 34px;
+}
+
+tr:nth-of-type(5) td:last-child > span, tr:nth-of-type(8) td:last-child > span{
+  width: 20%;
+  display: inline-block;
+  height: 100%;
+  line-height: 34px;
+}
+
+
+tr:first-child td:first-child, tr:nth-child(2) td:nth-child(2), tr:nth-child(8) td:nth-child(2) {
+  color: rgb(208, 2, 27);
+}
+
+tr:nth-child(2) td:nth-child(2){
+  font-size: 30px !important;
+}
+
+tr:first-child td:first-child{
+  font-size: 18px !important;
+}
+
+tr:last-child td, tr:nth-last-child(2) td {
+  font-size: 14px!important;
+}
+
+tr:not(:first-child) td:first-child{
+  font-size: 14px !important;
+  font-weight: 300;
+  
+}
+
+label{
+  font-weight: 700;
+  display:inline-block;
+}
+
+tr:nth-last-child(2), tr:last-child{
+  background-color: #fff9dc;
+  
+}
+
+.fa-solid:before{
+  font-size: 50px;
+  vertical-align: bottom;
+  padding:0;
+  border:none;
+}
+
+td.first-td{
+  
+width: 100%;
+}
+
+td.first-td span{
+
+}
+
+[type=button] {
+  cursor: pointer;
+}

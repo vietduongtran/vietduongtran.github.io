@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo Form</title>
+</head>
+
+<style>
+
+</style>
+
+<body>
+
+    <!-- Method: "Post" không hiện trên dòng link thông tin nhạy cảm;
+                 "Get" có hiện ví dụ mk -->
+    <form action="#" method="post">
+
+        <!-- Label là tên bên trái , for "viết id của khung này" 
+        required - là cần điền -->
+        <label for="Username">Username:</label>
+        
+        <!-- input - ô viết được; placeholder text mờ . cần có id để js -->
+        <input id="Username" type="text" placeholder="enter here ..." name="username" required />
+
+        <!-- muốn xuống dòng dùng br x2 -->
+
+        <br><br>
+
+        <!-- type Password: để content bằng sao -->
+        <label for="password">Password:</label>
+        <input id="password" type="password" placeholder="enter here ..." name="password" required />
+
+        <br><br>
+
+        <!-- type Radio -->
+        <!-- dùng 1 name để chỉ được pick 1 ô -->   
+        <label for="gender">Gender:</label>
+
+        <input type="radio" id="female" value="female" name="gender">
+        <label for="female">Female</label>
+
+        <input type="radio" value="male" id="male" name="gender">
+        <label for="male">Male</label>
+
+        <input type="radio" value="other" id="other" name="gender">
+        <label for="other">Other</label>
+
+        <br><br>
+
+        <!-- type Checkbox -->
+        <label for="favorites">Hobby:</label>
+
+        <input type="checkbox" id="swim" value="swim" name="favorites">
+        <label for="swim">Swim</label>
+
+        
+        <input type="checkbox" id="read" value="read" name="favorites">
+        <label for="read">Read boook</label>
+
+        
+        <input type="checkbox" id="music" value="music" name="favorites">
+        <label for="music">Listen to Music</label>
+
+        
+        <input type="checkbox" id="game" value="game" name="favorites">
+        <label for="game">Play game</label>
+
+        <br><br>
+
+        <label for="">Country:  </label>
+        <select name="countries" id="country">
+            <option value="ha-noi">Hà Nội</option>
+            <option value="tp-hcm">TP Hồ Chí Minh</option>
+            <option value="hai-phong">Hải Phòng</option>
+            <option value="ha-noi">Hà Nội</option>
+
+            <br /><br />
+
+        </select>
+
+        
+        <br /><br />
+        <!-- Button -->
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+    </form>    
+</body>
+
+</html>

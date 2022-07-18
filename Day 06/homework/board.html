@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoc la co viec</title>
+</head>
+
+<style>
+
+#container {
+    padding: 20px;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.board {
+    background-color: #c4c4c4;
+    height: 456px;
+    width: 396px;
+    animation: change-color 5s infinite;
+}
+
+.hoc {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes change-color {
+    25% {
+        background-color: rgb(250, 143, 143);
+    }
+
+    50% {
+        background-color: rgb(229, 255, 246);
+    }
+
+    75% {
+        background-color: beige;
+    }
+}
+
+.hoc::after {
+    content: "";
+    animation: text1234 4s infinite ease-in-out;
+}
+
+p {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+@keyframes text1234 {
+
+    20% {
+        content: "Hoc";
+    }
+
+    40% {
+        content: "la";
+    }
+
+    60% {
+        content: "co";
+    }
+
+    80% {
+        content: "viec";    
+    }
+    
+
+}
+
+</style>
+
+
+<body>
+    <div id="container">
+        <div class="board">
+            <p class="hoc"></p>
+        </div>
+
+    </div>
+</body>
+
+</html>

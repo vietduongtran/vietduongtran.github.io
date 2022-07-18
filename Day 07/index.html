@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Class, Pseudo ELement</title>
+  </head>
+
+  <style>
+
+    /* pseudo class" : " , pseudo element " :: "*/
+    a:link {
+      color: green;
+    }
+
+    a:hover {
+      color: blue;
+    }
+
+    a:active {
+      color: orange;
+    }
+
+    a:visited {
+      color: red;
+    }
+
+    /* pseudo element được hiểu nôm na là phần tử giả, được dùng để ạo style đặt biệt cho chữ cái đầu tiên, dòng đầu tiên,
+     hoặc nôi dung trước và sau của phần tử */
+
+    p::first-letter {
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    .paragraph::first-line {
+      text-decoration: underline;
+    }
+
+    h1 {position: relative;
+        padding: 20px;
+    }
+
+    h1::before {
+        content: '';
+        position: absolute;
+        left: 0px;
+        top: 8px;
+        border-top: 10px solid solid;
+        border-bottom: 10px solid transparent;
+        border-left: 10px solid green;
+
+    }
+
+    .money::after {
+        content: ' VND';
+    }
+    
+    .paragraph::selection {
+        /* lúc bôi lên thành màu vàng */
+        background-color: yellow;
+    }
+
+  </style>
+
+  <body>
+
+    <h1>Đây là tiêu đề h1</h1>
+
+    <a href="#">Google</a>
+    <p>Hoc CSS</p>
+
+    <p class="paragraph">
+      Quyền Bộ trưởng Y tế Đào Hồng Lan nói ngành y rất cần sự chia sẻ của lãnh
+      đạo Đảng, Nhà nước và đồng cảm của nhân dân để vượt qua khó khăn, thách
+      thức. Trưa 15/7, sau khi nhận nhiệm vụ làm Bí thư Ban cán sự Đảng, quyền
+      Bộ trưởng Y tế, bà Đào Hồng Lan trả lời phỏng vấn báo chí. - Cảm xúc của
+      bà thế nào khi nhận nhiệm vụ mới? - Trước tiên, tôi cảm ơn Đảng, Nhà nước,
+      Thủ tướng đã tin tưởng phân công, điều động tôi nhận nhiệm vụ đứng đầu
+      ngành y tế. Đây là lĩnh vực rất quan trọng trong chính sách an sinh xã hội
+      của cả nước. Lúc này, ngành y tế đang gặp nhiều khó khăn liên quan tới
+      phòng chống Covid-19; công tác cán bộ; tháo gỡ rào cản để đảm bảo điều
+      kiện chăm sóc sức khỏe, khám chữa bệnh của nhân dân.
+    </p>
+
+    <p class="money">1.000.000</p>
+    <p class="money"> 2.030.000</p>
+
+  </body>
+</html>
