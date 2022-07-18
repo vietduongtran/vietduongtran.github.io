@@ -56,12 +56,11 @@ blockquote {
     padding-left: 15px;
 }
 
-img {
-    vertical-align: center;
-}
-
 .img1 {
-    display: block;
+    display: flex;
+    align-items: center;
+  justify-content: center;
+
 }
 
 h2 {
