@@ -1,3 +1,5 @@
+package buoi3;
+
 import java.util.Scanner;
 
 public class homework3 {
@@ -7,50 +9,53 @@ public class homework3 {
         // bai 1
             
         // Scanner scanner = new Scanner(System.in);
-        // int number, sum = 0, i = 1;
+        
 
         // System.out.println("Nhap nguyen so: ");
-        // number = scanner.nextInt(); 
+        // int number = scanner.nextInt(); 
 
-        // while (number > sum) {
-        //     for (number = 1; i <= number; i++ );
+        // if (number > 0) {
+        //   int sum = (number + 1) * number / 2;
+        //   System.out.printf("Tổng từ 1 đến %d là: %d", number, sum);
+        // } else {
+        //   System.out.println("Khong phai so nguyen duong!");
         // }
-        // System.out.println("Tong tu" + i + " -> " + number + ": " + sum);
-
-        // scanner.close();
-
+        // }
         
        // bai 2
 
-    //     int primeCount = 0;
-    //     int primeTotal = 0;
-    //     int num = 0;
-    //     boolean isPrime = true;
-    //     while (primeCount < 100) {
-    //       num++;
-    //       if (num < 2) {
-    //         isPrime = false;
+        int primeCount = 0;
+        int primeTotal = 0;
+        int num = 2;
     
-    //       } else if (num == 2) {
-    //         primeCount = 1;
-    //         primeTotal = primeTotal + num;
-          
-    //       } else if (num > 2) {
-    //         for (int i = 2; i < num; i++) {
-    //           int temp = num % i;
-    //           if (temp == 0) {
-    //             break;
-    //           }
-    
-    //           if (primeCount < 100 && temp != 0 && i == num - 1) {
-    //             primeCount++;
-    //             primeTotal = primeTotal + num;
-    
-    //           }
-    //     }
-    //     System.out.println("Tong 100 so nguyen to dau tien la: " + primeTotal);
-    //   }
-    //     }
+        while (primeCount <= 100) {
+      
+          if (num == 2) {
+            primeCount++;
+            primeTotal = primeTotal + num;
+            System.out.print(num+ " + ");
+            num++;
+            continue;
+          }
+
+        boolean isPrime = true;
+        for (int i = 2; i <= num / 2; i++) {
+          int temp = num % i;
+          if (temp == 0) {
+            isPrime = false;
+            break;
+          }
+        }
+        if (isPrime == true) {
+          primeCount++;
+          primeTotal = primeTotal + num;
+          System.out.print(num + " + ");
+        }
+        num++;
+        }
+        System.out.println("= " + primeTotal);
+      }
+        }
 
         // bai 3
     //     int positiveNumber;
@@ -148,30 +153,30 @@ public class homework3 {
 
     // bai 8
 
-    Scanner scanner = new Scanner(System.in);
-    System.out.println("Original String: ");
-    String str = scanner.nextLine();
-    boolean check = true;
+  //   Scanner scanner = new Scanner(System.in);
+  //   System.out.println("Original String: ");
+  //   String str = scanner.nextLine();
+  //   boolean check = true;
 
-    for (int i = 0; i < str.length(); i++) {
-      char character = str.charAt(i);
-      for(int j = i + 1; j < str.length(); j++){     
-        if(check == false){
-          check = false;
-          break;
-        }
-        if (character != str.charAt(j)) {
-          check = true;
+  //   for (int i = 0; i < str.length(); i++) {
+  //     char character = str.charAt(i);
+  //     for(int j = i + 1; j < str.length(); j++){     
+  //       if(check == false){
+  //         check = false;
+  //         break;
+  //       }
+  //       if (character != str.charAt(j)) {
+  //         check = true;
           
-        }else{
-          check = false;
-          break;
-        }
+  //       }else{
+  //         check = false;
+  //         break;
+  //       }
      
-      }
-    }
-  System.out.println("Result String : " + check);
-}
-}
+  //     }
+  //   }
+  // System.out.println("Result String : " + check);
+
+
         
     
