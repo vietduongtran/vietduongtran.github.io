@@ -10,6 +10,7 @@ public class Main3 {
 
         System.out.println("Nhap chieu ngan cua rectangle: ");
         double widthLength = scanner.nextDouble();
+        
         Rectangle rectangle = new Rectangle(rectangleLength, widthLength);
 
         rectangle.display();
