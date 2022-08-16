@@ -1,4 +1,4 @@
-package homework7;
+package buoi7.homework7;
 
 import java.rmi.StubNotFoundException;
 import java.util.Arrays;
