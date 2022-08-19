@@ -6,11 +6,11 @@ public class mainTikTok {
     
     public static void main(String[] args) {
         
-        Scanner scanner = new Scanner(System.in);
-        
-        System.out.println("Nhap thong tin cua Idol: ");
-        String name = scanner.nextLine();
-        
+    Song song = new Song(1020, "Bai hat 1", "singer 1");
+    Follower follower = new Follower("Le B A", 919290, "email@gmail.com" , 52557);
+    
+    
+
         
 
     }
