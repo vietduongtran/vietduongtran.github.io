@@ -17,7 +17,7 @@ public class Techmaster {
 
     @Override
     public String toString() {
-        return "Nhan su cua Techmaster: \nQuan ly: " + admin + ", giao vien: " + teacher +  ".\n Lop hoc: " + classTech + ".";
+        return "Nhan su cua Techmaster: \nQuan ly: " + admin + teacher +  ".\n Lop hoc: " + classTech + ".";
     }
 
     // add students
@@ -27,7 +27,7 @@ public class Techmaster {
         return this.techMaster;
         
     }
-    
+
     public boolean ID (int usedStudentID) {
         boolean isBoolean = classTech.ID(usedStudentID);
         return isBoolean;

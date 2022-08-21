@@ -20,7 +20,7 @@ public class Students {
 
     @Override
     public String toString() {
-        return "Thong tin cac hoc vien.\nID: " + studentID + "\nHo ten: " + name + ". Tuoi: " + age + ".\n Hoc luc: " + hocLuc ;
+        return "ID: " + studentID + "\nHo ten: " + name + ". Tuoi: " + age + ".\n Hoc luc: " + hocLuc ;
     }
 
     public void add(Students students) {
